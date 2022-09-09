@@ -1,6 +1,9 @@
 fetch(
     'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json'
     )
+    /*.then(function(res){
+        return res.json();
+    })*/
     .then((res) => res.json())
     .then((data) => setHeroes(data));
 
